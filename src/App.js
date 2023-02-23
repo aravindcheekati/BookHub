@@ -1,6 +1,6 @@
 import './App.css'
-
-import NavBar from './components/NavBar'
+import Home from './components/Home'
+// import NavBar from './components/NavBar'
 // import Login from './components/Login'
 
 // use the below bookshelvesList for rendering read status of book items in Bookshelves Route
@@ -28,6 +28,6 @@ const bookshelvesList = [
   },
 ]
 
-const App = () => <NavBar />
+const App = () => <Home />
 
 export default App
