@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Inter&display=swap');
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.login-image-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.login-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 499px;
+  height: 484px;
+  background: #ffffff;
+  padding: 50px;
+}
+
+.login-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-name {
+  font-family: 'Almendra SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #0284c7;
+}
+
+.login-form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.login-form label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5a7184;
+}
+
+.login-form input {
+  background: #ffffff;
+  border: 1px solid #c3cad9;
+  border-radius: 8px;
+  margin: 15px 0px;
+  height: 45px;
+  padding: 10px;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  background: #0284c7;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Roboto';
+}
+
+.error-msg {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ef4444;
+  margin-bottom: 20px;
+}
+
+.mobile-book-img-container {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .login-container {
+    grid-template-columns: 1fr;
+  }
+  .login-image-container {
+    display: none;
+  }
+  .form-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .mobile-book-img-container {
+    margin-bottom: 20px;
+    display: block;
+  }
+}
